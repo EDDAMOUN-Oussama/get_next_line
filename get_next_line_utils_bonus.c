@@ -6,15 +6,15 @@
 /*   By: oeddamou <oeddamou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 11:23:39 by oeddamou          #+#    #+#             */
-/*   Updated: 2024/12/04 18:12:52 by oeddamou         ###   ########.fr       */
+/*   Updated: 2024/12/07 13:44:48 by oeddamou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
 
-int	ft_strchr(char *p)
+long	ft_strchr(char *p)
 {
-	int	i;
+	long	i;
 
 	i = 0;
 	if (p)
@@ -30,9 +30,9 @@ int	ft_strchr(char *p)
 	return (-1);
 }
 
-int	ft_strcpy(char *d, char *s, int c)
+long	ft_strcpy(char *d, char *s, int c)
 {
-	int	i;
+	long	i;
 
 	i = 0;
 	if (s)
@@ -56,8 +56,8 @@ int	ft_strcpy(char *d, char *s, int c)
 char	*ft_substr(char **r)
 {
 	char	*p;
-	int		i;
-	int		s;
+	long	i;
+	long	s;
 
 	if (!r || !(*r))
 		return (NULL);
@@ -76,8 +76,8 @@ char	*ft_substr(char **r)
 int	ft_strjoin(char **buf, char *r)
 {
 	char	*p;
-	int		i;
-	int		n;
+	long	i;
+	long	n;
 
 	if (!r)
 		return (-1);
@@ -99,7 +99,7 @@ int	ft_strjoin(char **buf, char *r)
 char	*ft_read_line(int fd, char **line)
 {
 	char	*r;
-	int		s;
+	long	s;
 
 	r = ((s = 0), malloc(BUFFER_SIZE + 1));
 	if (!r)

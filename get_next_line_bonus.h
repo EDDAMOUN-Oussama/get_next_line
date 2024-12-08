@@ -6,7 +6,7 @@
 /*   By: oeddamou <oeddamou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 11:32:31 by oeddamou          #+#    #+#             */
-/*   Updated: 2024/12/04 11:52:04 by oeddamou         ###   ########.fr       */
+/*   Updated: 2024/12/07 13:48:08 by oeddamou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ char	*get_next_line(int fd);
 char	*ft_read_line(int fd, char **line);
 int		ft_strjoin(char **buf, char *r);
 char	*ft_substr(char **r);
-int		ft_strchr(char *p);
-int		ft_strcpy(char *d, char *s, int c);
+long	ft_strchr(char *p);
+long	ft_strcpy(char *d, char *s, int c);
 #endif
